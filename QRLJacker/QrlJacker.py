@@ -3,11 +3,6 @@
 #Written by: Karim shoair - D4Vinci ( QrlJacker-Framework )
 from sys import version_info as py_ver
 import argparse,os
-if ( py_ver.major==3 and py_ver.minor<7 ):
-    # The second condition is for the future releases of python
-    error("The framework is designed to work only on python 3.7 or above!")
-    error("You are using version "+".".join( map( str,[py_ver.major, py_ver.minor, py_ver.micro] )) )
-    exit(0)
 
 elif os.name=="nt":
     error("The framework is designed to work on Linux or MacOS only! Sorry for that :)")
