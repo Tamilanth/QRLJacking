@@ -4,10 +4,6 @@
 from sys import version_info as py_ver
 import argparse,os
 
-elif os.name=="nt":
-    error("The framework is designed to work on Linux or MacOS only! Sorry for that :)")
-    exit(0)
-
 from core import Cli,utils,Settings,db
 from core.color import *
 
